@@ -1,0 +1,21 @@
+.portfolio{
+	margin-right: 10%;
+	margin-left:10%;
+}
+
+.element{
+	width: 150px;
+	height: 200px;
+	border-style: solid;
+	overflow: hidden;
+	padding:20px;
+	margin:5%;
+
+	display: block;
+	float:left;
+}
+
+h1{
+	text-align: center;
+	text-transform: uppercase;
+}
