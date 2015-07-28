@@ -1,0 +1,48 @@
+body{
+	/*Así añado una imagen de fondo:*/
+	background-image: url("http://audrinaweb.com/images/audrina%20web%20background.jpg");
+	background-repeat:repeat-x;
+	background-color: #FAFAFA;
+
+	font-family: sans-serif;
+}
+
+
+.content{
+	margin-left:25%;
+	margin-right: 25%;
+}
+
+h1{
+	font-size: 70px;
+	text-align: center;
+}
+
+header{
+	text-align: right;
+	font-size: 20px;
+	font-family: sans-serif;
+	font-style: bold;
+	color:white;
+
+	background-color: black;
+
+	padding:5px;
+	margin:0px;
+
+}
+
+footer{
+	background-color: black;
+
+	font-size: 20px;
+	font-family: sans-serif;
+	font-style: bold;
+	color:white;
+
+	padding:20px;
+}
+
+footer p{
+	margin-left:25%;
+}

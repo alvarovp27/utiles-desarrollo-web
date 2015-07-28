@@ -1,0 +1,139 @@
+<html>
+	<head>
+		<title>Lorem ipsum</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<!-- Así importo JQUERY: -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	</head>
+
+<body>
+
+<!-- Código Jquery para smooth scroll: -->
+
+<script>
+
+	if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+	window.onmousewheel = document.onmousewheel = wheel;
+
+	function wheel(event) {
+		var delta = 0;
+		if (event.wheelDelta) delta = event.wheelDelta / 120;
+		else if (event.detail) delta = -event.detail / 3;
+
+		handle(delta);
+		if (event.preventDefault) event.preventDefault();
+		event.returnValue = false;
+	}
+
+	function handle(delta) {
+		//Las siguientes dos variables permiten controlar el tiempo del scroll y la distancia que recorre
+		var time = 300; 
+		var distance = 500;
+
+		$('html, body').stop().animate({
+			scrollTop: $(window).scrollTop() - (distance * delta)
+		}, time );
+	}
+</script>
+
+
+
+	<header>
+		Twitter | Facebook | Instagram
+	</header>
+
+	<div class="content">
+
+		<h1>Lorem ipsum</h1>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summus dolor plures dies manere non potest? Quis suae urbis conservatorem Codrum, quis Erechthei filias non maxime laudat? Istam voluptatem perpetuam quis potest praestare sapienti? Expressa vero in iis aetatibus, quae iam confirmatae sunt. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Duo Reges: constructio interrete. Erat enim Polemonis. </p>
+
+		<p>Quod quidem iam fit etiam in Academia. Quae diligentissime contra Aristonem dicuntur a Chryippo. Istam voluptatem, inquit, Epicurus ignorat? Quasi vero, inquit, perpetua oratio rhetorum solum, non etiam philosophorum sit. Quo modo autem philosophus loquitur? Contineo me ab exemplis. </p>
+
+		<p>Si mala non sunt, iacet omnis ratio Peripateticorum. Minime vero, inquit ille, consentit. Semper enim ita adsumit aliquid, ut ea, quae prima dederit, non deserat. Tu vero, inquam, ducas licet, si sequetur; Quid enim est a Chrysippo praetermissum in Stoicis? An eiusdem modi? Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. </p>
+
+		<p>Quae si potest singula consolando levare, universa quo modo sustinebit? Verum hoc idem saepe faciamus. Sed in rebus apertissimis nimium longi sumus. Te enim iudicem aequum puto, modo quae dicat ille bene noris. Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest. Neque enim civitas in seditione beata esse potest nec in discordia dominorum domus; Et quod est munus, quod opus sapientiae? Quod si ita sit, cur opera philosophiae sit danda nescio. </p>
+
+		<p>Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. At hoc in eo M. Quis istum dolorem timet? Mihi enim satis est, ipsis non satis. At modo dixeras nihil in istis rebus esse, quod interesset. </p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summus dolor plures dies manere non potest? Quis suae urbis conservatorem Codrum, quis Erechthei filias non maxime laudat? Istam voluptatem perpetuam quis potest praestare sapienti? Expressa vero in iis aetatibus, quae iam confirmatae sunt. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Duo Reges: constructio interrete. Erat enim Polemonis. </p>
+
+		<p>Quod quidem iam fit etiam in Academia. Quae diligentissime contra Aristonem dicuntur a Chryippo. Istam voluptatem, inquit, Epicurus ignorat? Quasi vero, inquit, perpetua oratio rhetorum solum, non etiam philosophorum sit. Quo modo autem philosophus loquitur? Contineo me ab exemplis. </p>
+
+		<p>Si mala non sunt, iacet omnis ratio Peripateticorum. Minime vero, inquit ille, consentit. Semper enim ita adsumit aliquid, ut ea, quae prima dederit, non deserat. Tu vero, inquam, ducas licet, si sequetur; Quid enim est a Chrysippo praetermissum in Stoicis? An eiusdem modi? Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. </p>
+
+		<p>Quae si potest singula consolando levare, universa quo modo sustinebit? Verum hoc idem saepe faciamus. Sed in rebus apertissimis nimium longi sumus. Te enim iudicem aequum puto, modo quae dicat ille bene noris. Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest. Neque enim civitas in seditione beata esse potest nec in discordia dominorum domus; Et quod est munus, quod opus sapientiae? Quod si ita sit, cur opera philosophiae sit danda nescio. </p>
+
+		<p>Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. At hoc in eo M. Quis istum dolorem timet? Mihi enim satis est, ipsis non satis. At modo dixeras nihil in istis rebus esse, quod interesset. </p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summus dolor plures dies manere non potest? Quis suae urbis conservatorem Codrum, quis Erechthei filias non maxime laudat? Istam voluptatem perpetuam quis potest praestare sapienti? Expressa vero in iis aetatibus, quae iam confirmatae sunt. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Duo Reges: constructio interrete. Erat enim Polemonis. </p>
+
+		<p>Quod quidem iam fit etiam in Academia. Quae diligentissime contra Aristonem dicuntur a Chryippo. Istam voluptatem, inquit, Epicurus ignorat? Quasi vero, inquit, perpetua oratio rhetorum solum, non etiam philosophorum sit. Quo modo autem philosophus loquitur? Contineo me ab exemplis. </p>
+
+		<p>Si mala non sunt, iacet omnis ratio Peripateticorum. Minime vero, inquit ille, consentit. Semper enim ita adsumit aliquid, ut ea, quae prima dederit, non deserat. Tu vero, inquam, ducas licet, si sequetur; Quid enim est a Chrysippo praetermissum in Stoicis? An eiusdem modi? Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. </p>
+
+		<p>Quae si potest singula consolando levare, universa quo modo sustinebit? Verum hoc idem saepe faciamus. Sed in rebus apertissimis nimium longi sumus. Te enim iudicem aequum puto, modo quae dicat ille bene noris. Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest. Neque enim civitas in seditione beata esse potest nec in discordia dominorum domus; Et quod est munus, quod opus sapientiae? Quod si ita sit, cur opera philosophiae sit danda nescio. </p>
+
+		<p>Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. At hoc in eo M. Quis istum dolorem timet? Mihi enim satis est, ipsis non satis. At modo dixeras nihil in istis rebus esse, quod interesset. </p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summus dolor plures dies manere non potest? Quis suae urbis conservatorem Codrum, quis Erechthei filias non maxime laudat? Istam voluptatem perpetuam quis potest praestare sapienti? Expressa vero in iis aetatibus, quae iam confirmatae sunt. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Duo Reges: constructio interrete. Erat enim Polemonis. </p>
+
+		<p>Quod quidem iam fit etiam in Academia. Quae diligentissime contra Aristonem dicuntur a Chryippo. Istam voluptatem, inquit, Epicurus ignorat? Quasi vero, inquit, perpetua oratio rhetorum solum, non etiam philosophorum sit. Quo modo autem philosophus loquitur? Contineo me ab exemplis. </p>
+
+		<p>Si mala non sunt, iacet omnis ratio Peripateticorum. Minime vero, inquit ille, consentit. Semper enim ita adsumit aliquid, ut ea, quae prima dederit, non deserat. Tu vero, inquam, ducas licet, si sequetur; Quid enim est a Chrysippo praetermissum in Stoicis? An eiusdem modi? Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. </p>
+
+		<p>Quae si potest singula consolando levare, universa quo modo sustinebit? Verum hoc idem saepe faciamus. Sed in rebus apertissimis nimium longi sumus. Te enim iudicem aequum puto, modo quae dicat ille bene noris. Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest. Neque enim civitas in seditione beata esse potest nec in discordia dominorum domus; Et quod est munus, quod opus sapientiae? Quod si ita sit, cur opera philosophiae sit danda nescio. </p>
+
+		<p>Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. At hoc in eo M. Quis istum dolorem timet? Mihi enim satis est, ipsis non satis. At modo dixeras nihil in istis rebus esse, quod interesset. </p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summus dolor plures dies manere non potest? Quis suae urbis conservatorem Codrum, quis Erechthei filias non maxime laudat? Istam voluptatem perpetuam quis potest praestare sapienti? Expressa vero in iis aetatibus, quae iam confirmatae sunt. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Duo Reges: constructio interrete. Erat enim Polemonis. </p>
+
+		<p>Quod quidem iam fit etiam in Academia. Quae diligentissime contra Aristonem dicuntur a Chryippo. Istam voluptatem, inquit, Epicurus ignorat? Quasi vero, inquit, perpetua oratio rhetorum solum, non etiam philosophorum sit. Quo modo autem philosophus loquitur? Contineo me ab exemplis. </p>
+
+		<p>Si mala non sunt, iacet omnis ratio Peripateticorum. Minime vero, inquit ille, consentit. Semper enim ita adsumit aliquid, ut ea, quae prima dederit, non deserat. Tu vero, inquam, ducas licet, si sequetur; Quid enim est a Chrysippo praetermissum in Stoicis? An eiusdem modi? Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. </p>
+
+		<p>Quae si potest singula consolando levare, universa quo modo sustinebit? Verum hoc idem saepe faciamus. Sed in rebus apertissimis nimium longi sumus. Te enim iudicem aequum puto, modo quae dicat ille bene noris. Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest. Neque enim civitas in seditione beata esse potest nec in discordia dominorum domus; Et quod est munus, quod opus sapientiae? Quod si ita sit, cur opera philosophiae sit danda nescio. </p>
+
+		<p>Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. At hoc in eo M. Quis istum dolorem timet? Mihi enim satis est, ipsis non satis. At modo dixeras nihil in istis rebus esse, quod interesset. </p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summus dolor plures dies manere non potest? Quis suae urbis conservatorem Codrum, quis Erechthei filias non maxime laudat? Istam voluptatem perpetuam quis potest praestare sapienti? Expressa vero in iis aetatibus, quae iam confirmatae sunt. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Duo Reges: constructio interrete. Erat enim Polemonis. </p>
+
+		<p>Quod quidem iam fit etiam in Academia. Quae diligentissime contra Aristonem dicuntur a Chryippo. Istam voluptatem, inquit, Epicurus ignorat? Quasi vero, inquit, perpetua oratio rhetorum solum, non etiam philosophorum sit. Quo modo autem philosophus loquitur? Contineo me ab exemplis. </p>
+
+		<p>Si mala non sunt, iacet omnis ratio Peripateticorum. Minime vero, inquit ille, consentit. Semper enim ita adsumit aliquid, ut ea, quae prima dederit, non deserat. Tu vero, inquam, ducas licet, si sequetur; Quid enim est a Chrysippo praetermissum in Stoicis? An eiusdem modi? Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. </p>
+
+		<p>Quae si potest singula consolando levare, universa quo modo sustinebit? Verum hoc idem saepe faciamus. Sed in rebus apertissimis nimium longi sumus. Te enim iudicem aequum puto, modo quae dicat ille bene noris. Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest. Neque enim civitas in seditione beata esse potest nec in discordia dominorum domus; Et quod est munus, quod opus sapientiae? Quod si ita sit, cur opera philosophiae sit danda nescio. </p>
+
+		<p>Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. At hoc in eo M. Quis istum dolorem timet? Mihi enim satis est, ipsis non satis. At modo dixeras nihil in istis rebus esse, quod interesset. </p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summus dolor plures dies manere non potest? Quis suae urbis conservatorem Codrum, quis Erechthei filias non maxime laudat? Istam voluptatem perpetuam quis potest praestare sapienti? Expressa vero in iis aetatibus, quae iam confirmatae sunt. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Duo Reges: constructio interrete. Erat enim Polemonis. </p>
+
+		<p>Quod quidem iam fit etiam in Academia. Quae diligentissime contra Aristonem dicuntur a Chryippo. Istam voluptatem, inquit, Epicurus ignorat? Quasi vero, inquit, perpetua oratio rhetorum solum, non etiam philosophorum sit. Quo modo autem philosophus loquitur? Contineo me ab exemplis. </p>
+
+		<p>Si mala non sunt, iacet omnis ratio Peripateticorum. Minime vero, inquit ille, consentit. Semper enim ita adsumit aliquid, ut ea, quae prima dederit, non deserat. Tu vero, inquam, ducas licet, si sequetur; Quid enim est a Chrysippo praetermissum in Stoicis? An eiusdem modi? Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. </p>
+
+		<p>Quae si potest singula consolando levare, universa quo modo sustinebit? Verum hoc idem saepe faciamus. Sed in rebus apertissimis nimium longi sumus. Te enim iudicem aequum puto, modo quae dicat ille bene noris. Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest. Neque enim civitas in seditione beata esse potest nec in discordia dominorum domus; Et quod est munus, quod opus sapientiae? Quod si ita sit, cur opera philosophiae sit danda nescio. </p>
+
+		<p>Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. At hoc in eo M. Quis istum dolorem timet? Mihi enim satis est, ipsis non satis. At modo dixeras nihil in istis rebus esse, quod interesset. </p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summus dolor plures dies manere non potest? Quis suae urbis conservatorem Codrum, quis Erechthei filias non maxime laudat? Istam voluptatem perpetuam quis potest praestare sapienti? Expressa vero in iis aetatibus, quae iam confirmatae sunt. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Duo Reges: constructio interrete. Erat enim Polemonis. </p>
+
+		<p>Quod quidem iam fit etiam in Academia. Quae diligentissime contra Aristonem dicuntur a Chryippo. Istam voluptatem, inquit, Epicurus ignorat? Quasi vero, inquit, perpetua oratio rhetorum solum, non etiam philosophorum sit. Quo modo autem philosophus loquitur? Contineo me ab exemplis. </p>
+
+		<p>Si mala non sunt, iacet omnis ratio Peripateticorum. Minime vero, inquit ille, consentit. Semper enim ita adsumit aliquid, ut ea, quae prima dederit, non deserat. Tu vero, inquam, ducas licet, si sequetur; Quid enim est a Chrysippo praetermissum in Stoicis? An eiusdem modi? Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. </p>
+
+		<p>Quae si potest singula consolando levare, universa quo modo sustinebit? Verum hoc idem saepe faciamus. Sed in rebus apertissimis nimium longi sumus. Te enim iudicem aequum puto, modo quae dicat ille bene noris. Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest. Neque enim civitas in seditione beata esse potest nec in discordia dominorum domus; Et quod est munus, quod opus sapientiae? Quod si ita sit, cur opera philosophiae sit danda nescio. </p>
+
+		<p>Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. At hoc in eo M. Quis istum dolorem timet? Mihi enim satis est, ipsis non satis. At modo dixeras nihil in istis rebus esse, quod interesset. </p>
+
+	</div>
+
+	<footer>
+		<p>© Lorem ipsum lol | :)</p>
+	</footer>
+
+</body>
+
+
+</html>
